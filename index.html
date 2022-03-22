@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Vechile Inspection Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <section id="content">
+        <section>
+        <h1>VISUAL VECHILE INSPECTION REPORT</h1>
+        <hr>
+        <div class="head">
+          <h3>Dealer Name: <input type="text"></h3>
+          <h3>Technician: <input type="text"></h3>
+          <h3>Date: <input type="text"></h3>
+        </div>
+        <div class="head">
+          <h3>Customer Name: <input type="text"></h3>
+          <h3>Yr./Make/Model: <input type="text" name="" id=""></h3>
+          <h3>Hat/Tag#: <input type="text"></h3>
+        </div>
+        <div class="head">
+          <h3>Mileage: <input type="text"></h3>
+          <h3>VIN: <input type="text"></h3>
+          <h3>Repair Order: <input type="text"></h3>
+        </div>
+      </section>
+      <section class="table">
+        <div class="tab1">
+            <div>
+              <div class="green-head">CHECKED AND OKAY</div>
+              <div class="yellow-head ">MAY NEED FUTURE ATTENTION</div>
+              <div class="red-head">REQUIRES IMMEDIATE ATTENTION</div>
+              <div class="topic">INTERIOR/EXTERIOR</div>
+            </div>
+            <div>
+              <div class="rows">
+                <span class="green"><input type="checkbox" id="green"></span>
+                <span class="yellow"><input type="checkbox" id="yellow"></span>
+                <span class="red"><input type="checkbox" id="red"></span><p class="info">Head Lights /Tail Lights / Turn Signals / Brake Lights /<br> Hazard Warning Lights /Exterior Lamps / License Plate Lights</p>
+              </div>
+              <div class="rows">  
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Windshield Washer Spray / Wiper Operation / Wiper Blades</p>
+              </div>
+              <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+               <span class="red"><input type="checkbox"></span><p class="info">Windshield Condition (Inspect for Cracks, or Pitting)</p>
+              </div>
+              <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Mirrors / Glass</p>
+              </div>
+              <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Emergency Brake Adjustment</p>
+              </div>
+              <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Horn Opeation</p>
+              </div>
+              <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Fuel Tank Cap Gasket</p>
+              </div>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Air Conditioning Filter (if equipped)</p>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Clutch Operation (if equipped)</p>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Back-up Lights Left / Right</p>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Dash Warning Lights</p>
+            </div>
+            <div class="rows end">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Carpet / Upholstery / Floor Mats</p>
+            </div>
+            <div>
+              <div>
+                <div class="topic">UNDER VECHILE</div>
+              </div>
+              <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Shock Absorp / Suspension / Struts</p>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Steering Gear Box / Linkage and Boots / Ball Joints / Dust Covers</p>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Muffler / Exhaust Pipes / Mountings / Catalytic Converter</p>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Carpet / Upholstery / Floor Mats</p>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Engine Oil and / or Fluid Leaks</p>
+            </div>
+            <div>
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Drive Shaft Boots/ Constant Velocity Boots/ U-joints / <br>Transmision Linkage(it equipped) </p>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Transmission / Differential / Transfer Case (Check Fluid Level),<br> Fluid Condition and Fluid Leaks</p>
+            </div>
+            <div class="rows">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Fuel Lines and Connections / Fuel Tank Band /<br> Fuel Tank Vapor Vent Systems Hoses</p>
+            </div>
+            <div class="rows end">
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Inspect Nuts and Bolts on Body Chassis</p>
+            </div>
+          </div>
+          <div>
+            <div>
+                <div class="topic">UNDER HOOD</div>
+              </div>
+              <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Fluid Levels / Coolant / Battery / Pomer Steering / <br> Brake Fluid/ Washer / Automatic Transmision  </p>
+            </div>
+            <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Engine Air Filter</p>
+            </div>
+            <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Drive Belts (Condition and adjustment)</p>
+            </div>
+            <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Cooling System Hoses / Heater Hoses / Air Conditioning / Hoses and Connections</p>
+            </div>
+            <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Radiator Core / Air Conditioning Condenser(if equipped)</p>
+            </div>
+            <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Coolant Recovery Reservior Fluid Level / Condition</p>
+            </div>
+            <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Cluth Reservior Fluid / Condition (As equipped)</p>
+            </div>  
+          </div>
+          <div>
+            <div>
+                <div class="topic">COMMENTS / ESTIMATES</div>
+              </div>
+              <div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+          </div>
+        </div>
+        <div class="tab2">
+          <div>
+              <div class="green-head">CHECKED AND OKAY</div>
+              <div class="yellow-head ">MAY NEED FUTURE ATTENTION</div>
+              <div class="red-head">REQUIRES IMMEDIATE ATTENTION</div>
+              <div class="topic">INTERIOR/EXTERIOR</div>
+            </div>
+            <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Battery Terminate / Cables / Mountings</p>
+            </div> 
+            <div class="rows"> 
+                <span class="green"><input type="checkbox"></span>
+                <span class="yellow"><input type="checkbox"></span>
+                <span class="red"><input type="checkbox"></span><p class="info">Check Condition of Battery (Storge Capacity Test)</p>
+            </div> 
+            <div class="rows side"> 
+                <span class="green"><input type="checkbox"></span><p class="info">Pass</p>
+                <span class="yellow"><input type="checkbox"></span><p class="info">Recharge Retest</p>
+                <span class="red"><input type="checkbox"></span><p class="info">Fail</p>
+                <div>
+                  <div class="spilt">
+                    <p class="info">Factory Spec Cold <br> Cranking Amps</p>
+                    <div class="box"></div>
+                  </div>
+                   <div class="spilt">
+                    <p class="info">Actual Cold <br> Cranking Amps</p>
+                    <div class="box"></div>
+                  </div>
+                </div>
+            </div>
+            <div class="grey">
+              <div>
+                <div class="topic">BRAKE AND TIRE</div>
+              </div>
+              <div class="slip">
+                <p class="info">Left Front</p>
+                <p class="info">Right Front</p>
+              </div>
+              <div class="slip">
+                <div class="boxed">
+                  <div>
+                    <span class="green"><input type="checkbox"></span>
+                    <span class="yellow"><input type="checkbox"></span>
+                    <span class="red"><input type="checkbox"></span><p class="info">Break Lining _______mm</p>
+                  </div>
+                  <div>
+                    <span class="green"><input type="checkbox"></span>
+                    <span class="yellow"><input type="checkbox"></span>
+                    <span class="red"><input type="checkbox"></span><p class="info">Tire Tread _______32nds</p>
+                  </div>
+                  <div>
+                    <span class="green"><input type="checkbox"></span>
+                    <span class="yellow"><input type="checkbox"></span>
+                    <span class="red"><input type="checkbox"></span><p class="info">Wear Pattern _________</p>
+                    <p class="info mid">Tire Pressure PSI</p>
+                    <div class="dis">
+                      <p class="info">Before_______</p> 
+                      <p class="info">After _______</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="boxed">
+                      <div>
+                        <span class="green"><input type="checkbox"></span>
+                        <span class="yellow"><input type="checkbox"></span>
+                        <span class="red"><input type="checkbox"></span><p class="info">Break Lining _______mm</p>
+                      </div>
+                      <div>
+                        <span class="green"><input type="checkbox"></span>
+                        <span class="yellow"><input type="checkbox"></span>
+                        <span class="red"><input type="checkbox"></span><p class="info">Tire Tread _______32nds</p>
+                      </div>
+                      <div>
+                        <span class="green"><input type="checkbox"></span>
+                        <span class="yellow"><input type="checkbox"></span>
+                        <span class="red"><input type="checkbox"></span><p class="info">Wear Pattern _________</p>
+                        <p class="info mid">Tire Pressure PSI</p>
+                        <div class="dis">
+                          <p class="info">Before_______</p> 
+                          <p class="info">After _______</p>
+                        </div>
+                      </div>
+                </div>
+  
+              </div>
+              <div class="slip">
+                <div>
+                  <span class="green"><input type="checkbox"></span>
+                  <span class="yellow"><input type="checkbox"></span>
+                  <span class="red"><input type="checkbox"></span><p class="info">Rotor / Drum</p>
+                  <div>
+                    <span class="yellow"><input type="checkbox"></span><p class="info">Alignment Check needed</p>
+                  </div>
+                </div>
+                <div>
+                  <img class="tire" src="assets/trye.jpg" alt="trye">
+                </div>
+                <div>
+                  <span class="green"><input type="checkbox"></span>
+                  <span class="yellow"><input type="checkbox"></span>
+                  <span class="red"><input type="checkbox"></span><p class="info">Rotor / Drum</p>
+                  <div>
+                    <span class="yellow"><input type="checkbox"></span><p class="info">Wheel Balance needed</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slip">
+                <p class="info">Left Rear</p>
+                <p class="info">Right Rear</p>
+              </div>
+              <div class="slip">
+                <div class="boxed">
+                  <div>
+                    <span class="green"><input type="checkbox"></span>
+                    <span class="yellow"><input type="checkbox"></span>
+                    <span class="red"><input type="checkbox"></span><p class="info">Break Lining _______mm</p>
+                  </div>
+                  <div>
+                    <span class="green"><input type="checkbox"></span>
+                    <span class="yellow"><input type="checkbox"></span>
+                    <span class="red"><input type="checkbox"></span><p class="info">Tire Tread _______32nds</p>
+                  </div>
+                  <div>
+                    <span class="green"><input type="checkbox"></span>
+                    <span class="yellow"><input type="checkbox"></span>
+                    <span class="red"><input type="checkbox"></span><p class="info">Wear Pattern _________</p>
+                    <p class="info mid">Tire Pressure PSI</p>
+                    <div class="dis">
+                      <p class="info">Before_______</p> 
+                      <p class="info">After _______</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="boxed">
+                      <div>
+                        <span class="green"><input type="checkbox"></span>
+                        <span class="yellow"><input type="checkbox"></span>
+                        <span class="red"><input type="checkbox"></span><p class="info">Break Lining _______mm</p>
+                      </div>
+                      <div>
+                        <span class="green"><input type="checkbox"></span>
+                        <span class="yellow"><input type="checkbox"></span>
+                        <span class="red"><input type="checkbox"></span><p class="info">Tire Tread _______32nds</p>
+                      </div>
+                      <div>
+                        <span class="green"><input type="checkbox"></span>
+                        <span class="yellow"><input type="checkbox"></span>
+                        <span class="red"><input type="checkbox"></span><p class="info">Wear Pattern _________</p>
+                        <p class="info mid">Tire Pressure PSI</p>
+                        <div class="dis">
+                          <p class="info">Before_______</p> 
+                          <p class="info">After _______</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <div class="slip">
+                  <div>
+                     <span class="green"><input type="checkbox"></span>
+                     <span class="yellow"><input type="checkbox"></span>
+                     <span class="red"><input type="checkbox"></span><p class="info">Rotor / Drum</p>
+                  </div>
+                  <div>
+                     <span class="green"><input type="checkbox"></span>
+                     <span class="yellow"><input type="checkbox"></span>
+                     <span class="red"><input type="checkbox"></span><p class="info">Rotor / Drum</p>
+                   </div>
+                </div>
+                <span><input type="checkbox"><p class="info">Brake Inspection Not Performed This Visit </p></span>
+            </div> 
+            <div>
+                <div class="topic">PRIOR BODY DAMAGE</div>
+                <img class="car" src="assets/car.webp" alt="">
+                <div class="dis">
+                          <p class="info">ADVISOR: <input type="text"></p> 
+                          <p class="info">CUSTOMER ACKNOWLEDGEMENT: <input type="text"></p>
+                </div>
+            </div>
+        </div>
+        </section>
+        </section>
+      
+        <section class="btn">
+            <button id="myBtn">DOWNLOAD PDF</button>
+        </section>
+        
+    </div> 
+</body>
+<script src="app.js"></script>
+<script type="txt/javascript">
+  printPdf();
+</script>
+</html>
